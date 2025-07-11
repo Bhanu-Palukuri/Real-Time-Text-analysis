@@ -5,7 +5,7 @@ from pyspark.sql.types import StringType
 # Create Spark Session with Kafka support
 spark = SparkSession.builder \
     .appName("KafkaStreamWordCount") \
-    .getOrCreate()
+    .getOrCreate() 
 
 spark.sparkContext.setLogLevel("WARN")
 
