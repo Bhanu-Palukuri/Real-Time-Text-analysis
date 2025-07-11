@@ -6,7 +6,7 @@ from collections import Counter
 from multiprocessing import Pool, cpu_count
 
 # Loading dataset
-df = pd.read_csv("Hotel_Reviews.csv")
+df = pd.read_csv("Hotel_Reviews.csv") 
 texts = (
     df['Positive_Review'].fillna('') + " " + df['Negative_Review'].fillna('')
 ).astype(str).tolist()
