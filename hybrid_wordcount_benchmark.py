@@ -5,7 +5,7 @@ from collections import Counter
 from multiprocessing import Pool, cpu_count
 
 # Loading and Combine Review Columns
-df = pd.read_csv("Hotel_Reviews.csv")
+df = pd.read_csv("Hotel_Reviews.csv") 
 
 # Combining positive and negative reviews into one string per row
 texts = (
