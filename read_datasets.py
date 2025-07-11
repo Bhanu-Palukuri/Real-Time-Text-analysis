@@ -9,7 +9,7 @@ print(hotel_df.head(3))
 amazon_df = pd.read_csv(
     'amazon_reviews_us_Electronics_v1_00.tsv',
     sep='\t',
-    on_bad_lines='skip',  
+    on_bad_lines='skip',   
     low_memory=False
 )
 print("\n Amazon Reviews Sample:")
