@@ -6,7 +6,7 @@ from pyspark.sql.types import StringType
 spark = SparkSession.builder \
     .appName("KafkaStreamTopWords") \
     .getOrCreate()
-
+ 
 spark.sparkContext.setLogLevel("WARN")
 
 # Reading from Kafka
