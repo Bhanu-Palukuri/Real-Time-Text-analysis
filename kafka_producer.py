@@ -4,7 +4,7 @@ import pandas as pd
 import time
 
 # Loading hotel reviews
-hotel_df = pd.read_csv('Hotel_Reviews.csv').fillna('')
+hotel_df = pd.read_csv('Hotel_Reviews.csv').fillna('') 
 producer = KafkaProducer(
     bootstrap_servers='localhost:9092',
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
