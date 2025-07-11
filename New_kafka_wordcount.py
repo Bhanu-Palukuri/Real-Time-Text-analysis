@@ -3,7 +3,7 @@ from pyspark.sql.functions import explode, split, col
 
 spark = SparkSession.builder \
     .appName("KafkaHotelReviewWordCount") \
-    .getOrCreate()
+    .getOrCreate() 
 
 df = spark.readStream \
     .format("kafka") \
