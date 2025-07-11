@@ -8,7 +8,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Reading from Kafka topic
-df = spark.readStream \
+df = spark.readStream \ 
     .format("kafka") \
     .option("kafka.bootstrap.servers", "localhost:9092") \
     .option("subscribe", "hotel-reviews") \
