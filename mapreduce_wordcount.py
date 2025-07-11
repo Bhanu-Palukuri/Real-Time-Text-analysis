@@ -3,7 +3,7 @@ import multiprocessing
 from collections import Counter
 import time
 
-
+ 
 # Reading the entire file and split into chunks
 def read_chunks(file_path, num_chunks):
     with open(file_path, 'r', encoding='utf-8') as f:
